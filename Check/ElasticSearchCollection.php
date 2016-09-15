@@ -7,7 +7,7 @@ use ZendDiagnostics\Check\CheckCollectionInterface;
 use Elasticsearch\ClientBuilder as ElasticsearchClientBuilder;
 
 /**
- * ElasticSearch service ping check
+ * ElasticSearch service ping check.
  *
  * @author Dmitry Gopkalo <drefixs@gmail.com>
  */
@@ -25,7 +25,7 @@ class ElasticSearchCollection implements CheckCollectionInterface
         foreach ($configs as $name => $config) {
             $sslVerification = isset($config['ssl_verification']) ? $config['ssl_verification'] : false;
             $elasticsearchClient = ElasticsearchClientBuilder::create()
-                ->setHosts($config['hosts'])
+                ->setHosts((array) $config['hosts'])
                 ->setSSLVerification($sslVerification)
                 ->build();
 

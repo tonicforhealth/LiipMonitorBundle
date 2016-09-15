@@ -11,7 +11,7 @@
     <services>
         <service id="liip_monitor.check.elasticsearch" public="false" class="%liip_monitor.check.elasticsearch.class%">
             <argument>%%liip_monitor.check.elasticsearch%%</argument>
-            <tag name="liip_monitor.check" alias="elasticsearch" />
+            <tag name="liip_monitor.check_collection" alias="elasticsearch" />
         </service>
     </services>
 </container>
