@@ -25,7 +25,8 @@
     "require": {
         "php": "^5.3.9|^7.0",
         "symfony/framework-bundle": "~2.3|~3.0",
-        "zendframework/zenddiagnostics": "^1.0.2"
+        "zendframework/zenddiagnostics": "^1.0.2",
+        "tonicforhealth/health-checker-service-checks": "^0.1.2"
     },
     "require-dev": {
         "matthiasnoback/symfony-dependency-injection-test": "^0.7.4",
@@ -36,7 +37,9 @@
 },
     "suggest": {
         "sensio/distribution-bundle": "To be able to use the composer ScriptHandler",
-        "symfony/expression-language": "To use the Expression check"
+        "symfony/expression-language": "To use the Expression check",
+        "elasticsearch/elasticsearch": "To be able to perform elasticsearch check",
+        "stomp-php/stomp-php": "To be able to perform activeMQ(stomp) check"
     },
     "autoload": {
         "psr-4": { "Liip\\MonitorBundle\\": "" }

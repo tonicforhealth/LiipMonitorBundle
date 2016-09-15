@@ -95,6 +95,8 @@ class LiipMonitorExtension extends Extension
             case 'guzzle_http_service':
             case 'memcache':
             case 'redis':
+            case 'stomp':
+            case 'elasticsearch':
             case 'rabbit_mq':
             case 'stream_wrapper_exists':
             case 'file_ini':
